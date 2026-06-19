@@ -4,571 +4,351 @@
 
 <head>
 
-<meta charset="UTF-8">
+  <meta charset="UTF-8" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>East Coast Elite | Financial Advisory</title>
+  <title>East Coast Elite | Financial Advisory</title>
 
-<style>
+  <style>
 
-*{
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
-    margin:0;
+    body {
 
-    padding:0;
+      font-family: Arial, sans-serif;
 
-    box-sizing:border-box;
+      line-height: 1.6;
 
-    font-family:Arial, sans-serif;
+      color: #1f2937;
 
-}
-
-body{
-
-    line-height:1.6;
-
-    color:#333;
-
-}
-
-header{
-
-    background:#0F4C4C;
-
-    color:white;
-
-    padding:20px 8%;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    position:sticky;
-
-    top:0;
-
-}
-
-.logo{
-
-    font-size:1.5rem;
-
-    font-weight:bold;
-
-}
-
-nav a{
-
-    color:white;
-
-    text-decoration:none;
-
-    margin-left:20px;
-
-}
-
-.hero{
-
-    background:linear-gradient(rgba(15,76,76,.85), rgba(15,76,76,.85)),
-
-    url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1600&q=80');
-
-    background-size:cover;
-
-    background-position:center;
-
-    color:white;
-
-    text-align:center;
-
-    padding:120px 20px;
-
-}
-
-.hero h1{
-
-    font-size:3rem;
-
-    margin-bottom:20px;
-
-}
-
-.hero p{
-
-    max-width:700px;
-
-    margin:auto;
-
-    margin-bottom:30px;
-
-}
-
-.btn{
-
-    display:inline-block;
-
-    background:#C8A24B;
-
-    color:white;
-
-    padding:12px 24px;
-
-    text-decoration:none;
-
-    border-radius:5px;
-
-}
-
-section{
-
-    padding:80px 8%;
-
-}
-
-.section-title{
-
-    text-align:center;
-
-    margin-bottom:50px;
-
-    color:#0F4C4C;
-
-}
-
-.cards{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-    gap:25px;
-
-}
-
-.card{
-
-    background:#f5f5f5;
-
-    padding:25px;
-
-    border-radius:10px;
-
-}
-
-.card h3{
-
-    margin-bottom:15px;
-
-    color:#0F4C4C;
-
-}
-
-.about{
-
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:40px;
-
-    align-items:center;
-
-}
-
-.about img{
-
-    width:100%;
-
-    border-radius:10px;
-
-}
-
-.process{
-
-    text-align:center;
-
-}
-
-.steps{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-
-    gap:20px;
-
-    margin-top:40px;
-
-}
-
-.step{
-
-    padding:20px;
-
-}
-
-.testimonials{
-
-    background:#f7f7f7;
-
-}
-
-.testimonial{
-
-    max-width:800px;
-
-    margin:20px auto;
-
-    text-align:center;
-
-}
-
-.contact{
-
-    background:#0F4C4C;
-
-    color:white;
-
-}
-
-.contact form{
-
-    max-width:600px;
-
-    margin:auto;
-
-}
-
-.contact input,
-
-.contact textarea{
-
-    width:100%;
-
-    padding:12px;
-
-    margin-bottom:15px;
-
-    border:none;
-
-    border-radius:5px;
-
-}
-
-.contact button{
-
-    background:#C8A24B;
-
-    color:white;
-
-    border:none;
-
-    padding:12px 24px;
-
-    cursor:pointer;
-
-    border-radius:5px;
-
-}
-
-footer{
-
-    background:#082d2d;
-
-    color:white;
-
-    text-align:center;
-
-    padding:20px;
-
-}
-
-@media(max-width:768px){
-
-    .about{
-
-        grid-template-columns:1fr;
+      background: #f8fafc;
 
     }
 
-    .hero h1{
+    header {
 
-        font-size:2rem;
+      background: #0f172a;
 
-    }
+      color: white;
 
-    header{
+      padding: 20px;
 
-        flex-direction:column;
-
-        gap:15px;
+      text-align: center;
 
     }
 
-}
+    header h1 { font-size: 32px; }
 
-</style>
+    header p { color: #cbd5e1; margin-top: 8px; }
+
+    .hero {
+
+      padding: 70px 20px;
+
+      text-align: center;
+
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+
+      color: white;
+
+    }
+
+    .hero h2 { font-size: 42px; margin-bottom: 15px; }
+
+    .hero p {
+
+      max-width: 700px;
+
+      margin: auto;
+
+      font-size: 18px;
+
+      color: #e2e8f0;
+
+    }
+
+    .btn {
+
+      display: inline-block;
+
+      margin-top: 25px;
+
+      padding: 14px 26px;
+
+      background: #facc15;
+
+      color: #0f172a;
+
+      text-decoration: none;
+
+      border-radius: 8px;
+
+      font-weight: bold;
+
+    }
+
+    section {
+
+      padding: 55px 20px;
+
+      max-width: 1100px;
+
+      margin: auto;
+
+    }
+
+    section h2 {
+
+      text-align: center;
+
+      font-size: 30px;
+
+      margin-bottom: 25px;
+
+      color: #0f172a;
+
+    }
+
+    .grid {
+
+      display: grid;
+
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+      gap: 22px;
+
+    }
+
+    .card {
+
+      background: white;
+
+      padding: 25px;
+
+      border-radius: 12px;
+
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+
+    }
+
+    .card h3 {
+
+      margin-bottom: 10px;
+
+      color: #1e3a8a;
+
+    }
+
+    .about, .contact {
+
+      background: white;
+
+      border-radius: 12px;
+
+      padding: 35px;
+
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+
+    }
+
+    footer {
+
+      background: #0f172a;
+
+      color: #cbd5e1;
+
+      text-align: center;
+
+      padding: 25px;
+
+      font-size: 14px;
+
+    }
+
+    .disclaimer {
+
+      font-size: 13px;
+
+      color: #64748b;
+
+      margin-top: 20px;
+
+    }
+
+  </style>
 
 </head>
 
 <body>
 
-<header>
+  <header>
 
-<div class="logo">East Coast Elite</div>
+    <h1>East Coast Elite Financial Advisory</h1>
 
-<nav>
+    <p>Professional Financial Consulting & Advisory Services</p>
 
-<a href="#services">Services</a>
+  </header>
 
-<a href="#about">About</a>
+  <div class="hero">
 
-<a href="#process">Process</a>
+    <h2>Financial Clarity. Confident Decisions.</h2>
 
-<a href="#contact">Contact</a>
+    <p>
 
-</nav>
+      East Coast Elite Financial Advisory helps individuals, families, and small businesses
 
-</header>
+      create smarter financial strategies through personalized consulting, planning, and guidance.
 
-<section class="hero">
+    </p>
 
-<h1>Trusted Financial Guidance</h1>
+    <a href="#contact" class="btn">Book a Consultation</a>
 
-<p>
+  </div>
 
-Helping individuals and small businesses build stronger financial foundations
+  <section>
 
-through planning, bookkeeping, education, and advisory services.
+    <h2>Our Services</h2>
 
-</p>
+    <div class="grid">
 
-<a href="#contact" class="btn">Book Free Consultation</a>
+      <div class="card">
 
-</section>
+        <h3>Personal Financial Consulting</h3>
 
-<section id="services">
+        <p>Guidance for budgeting, saving, goal planning, and improving overall financial confidence.</p>
 
-<h2 class="section-title">Our Services</h2>
+      </div>
 
-<div class="cards">
+      <div class="card">
 
-<div class="card">
+        <h3>Business Financial Strategy</h3>
 
-<h3>Financial Planning</h3>
+        <p>Support for small business owners looking to organize finances, plan growth, and improve decision-making.</p>
 
-<p>
+      </div>
 
-Personalized budgeting, savings strategies,
+      <div class="card">
 
-and financial roadmaps designed around your goals.
+        <h3>Credit & Budget Planning</h3>
 
-</p>
+        <p>Practical strategies to manage expenses, understand credit, and build stronger financial habits.</p>
 
-</div>
+      </div>
 
-<div class="card">
+      <div class="card">
 
-<h3>Bookkeeping</h3>
+        <h3>Advisory Sessions</h3>
 
-<p>
+        <p>One-on-one consultations designed around your specific financial goals and challenges.</p>
 
-Reliable bookkeeping and financial organization
+      </div>
 
-for small businesses and entrepreneurs.
+    </div>
 
-</p>
+  </section>
 
-</div>
+  <section>
 
-<div class="card">
+    <div class="about">
 
-<h3>Tax Planning</h3>
+      <h2>About East Coast Elite</h2>
 
-<p>
+      <p>
 
-Preparation support and proactive planning
+        East Coast Elite Financial Advisory is a home-based financial consulting business
 
-to help you stay organized year-round.
+        focused on helping clients make informed financial decisions. We provide professional,
 
-</p>
+        client-first guidance for people seeking structure, strategy, and accountability in their finances.
 
-</div>
+      </p>
 
-<div class="card">
+      <br>
 
-<h3>Financial Coaching</h3>
+      <p>
 
-<p>
+        Our mission is to simplify financial planning and provide clear, practical advice that supports
 
-One-on-one guidance and educational workshops
+        long-term stability and growth.
 
-that build confidence and long-term success.
+      </p>
 
-</p>
+    </div>
 
-</div>
+  </section>
 
-</div>
+  <section>
 
-</section>
+    <h2>How We Work</h2>
 
-<section id="about">
+    <div class="grid">
 
-<div class="about">
+      <div class="card">
 
-<div>
+        <h3>1. Consultation</h3>
 
-<img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1000&q=80" alt="Financial Advisor">
+        <p>We begin by learning about your current financial situation and goals.</p>
 
-</div>
+      </div>
 
-<div>
+      <div class="card">
 
-<h2 style="color:#0F4C4C;">About East Coast Elite</h2>
+        <h3>2. Strategy</h3>
 
-<br>
+        <p>We create a personalized plan based on your needs and priorities.</p>
 
-<p>
+      </div>
 
-East Coast Elite was built on the belief that financial guidance
+      <div class="card">
 
-should be practical, transparent, and accessible.
+        <h3>3. Guidance</h3>
 
-</p>
+        <p>We provide ongoing support to help you stay focused and informed.</p>
 
-<br>
+      </div>
 
-<p>
+    </div>
 
-We help individuals and businesses create clear plans,
+  </section>
 
-improve financial organization, and build confidence in their future.
+  <section id="contact">
 
-</p>
+    <div class="contact">
 
-</div>
+      <h2>Contact Us</h2>
 
-</div>
+      <p><strong>Business Name:</strong> East Coast Elite Financial Advisory</p>
 
-</section>
+      <p><strong>Service Area:</strong> East Coast / Remote Consultations Available</p>
 
-<section id="process" class="process">
+      <p><strong>Email:</strong> quadwill99@gmail.com</p>
 
-<h2 class="section-title">How It Works</h2>
+      <p><strong>Hours:</strong> Monday – Friday, 9:00 AM – 6:00 PM</p>
 
-<div class="steps">
+      <br>
 
-<div class="step">
+      <a href="mailto:quadwill99@gmail.com" class="btn">Email Us</a>
 
-<h3>1. Consultation</h3>
+      <p class="disclaimer">
 
-<p>Tell us about your goals.</p>
+        Disclaimer: East Coast Elite Financial Advisory provides financial consulting and educational guidance.
 
-</div>
+        Services do not constitute legal, tax, or investment advice. Clients should consult licensed professionals
 
-<div class="step">
+        before making major financial decisions.
 
-<h3>2. Strategy</h3>
+      </p>
 
-<p>Receive a customized financial roadmap.</p>
+    </div>
 
-</div>
+  </section>
 
-<div class="step">
+  <footer>
 
-<h3>3. Implementation</h3>
+    <p>&copy; 2026 East Coast Elite Financial Advisory. All Rights Reserved.</p>
 
-<p>Put your plan into action.</p>
-
-</div>
-
-<div class="step">
-
-<h3>4. Support</h3>
-
-<p>Ongoing guidance and adjustments.</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="testimonials">
-
-<h2 class="section-title">Client Feedback</h2>
-
-<div class="testimonial">
-
-★★★★★
-
-<p>
-
-"Professional, transparent, and easy to work with."
-
-</p>
-
-</div>
-
-<div class="testimonial">
-
-★★★★★
-
-<p>
-
-"They helped us organize our business finances and save time."
-
-</p>
-
-</div>
-
-<div class="testimonial">
-
-★★★★★
-
-<p>
-
-"Excellent guidance and a clear financial strategy."
-
-</p>
-
-</div>
-
-</section>
-
-<section id="contact" class="contact">
-
-<h2 class="section-title" style="color:white;">
-
-Book Your Free Consultation
-
-</h2>
-
-<form>
-
-<input type="text" placeholder="Full Name">
-
-<input type="email" placeholder="Email Address">
-
-<input type="tel" placeholder="Phone Number">
-
-<textarea rows="5" placeholder="Tell us how we can help"></textarea>
-
-<button type="submit">Submit</button>
-
-</form>
-
-</section>
-
-<footer>
-
-<p>© 2026 East Coast Elite Financial Advisory. All Rights Reserved.</p>
-
-</footer>
+  </footer>
 
 </body>
 
